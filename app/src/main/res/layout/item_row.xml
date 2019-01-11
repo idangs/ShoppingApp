@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:layout_marginTop="35dp"
+    android:background="@drawable/secondbackground"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="120dp"
+        android:layout_height="118dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="18dp"
+        android:paddingLeft="10dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="119dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ivIcon"
+        android:layout_marginEnd="103dp"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="72dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ivIcon"
+        android:layout_marginEnd="18dp"
+        android:text="@string/delete"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="204dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/item_name"
+        android:layout_below="@+id/btnDelete"
+        android:text="TextView"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/dis_checkbox"
+        android:layout_width="95dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/item_name"
+        android:layout_marginTop="90dp"
+        android:checked="false"
+        android:text="@string/purchased"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/item_name"
+        android:layout_marginTop="120dp"
+        android:text="@string/view_item_details"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="87dp"
+        android:layout_height="24dp"
+        android:layout_alignEnd="@+id/btnDelete"
+        android:layout_alignTop="@+id/dis_checkbox"
+        android:layout_marginEnd="-1dp"
+        android:text="TextView"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
